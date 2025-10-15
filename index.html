@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reinvente Agência</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/css/style.css">
+    <!-- Adicione o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- 2.1 Barra de Navegação -->
+    <nav class="navbar navbar-dark">
+        <div class="logo logo-reinvente">
+            <a href="index.html">
+                <img src="source/imgs/logo_branca.png" alt="Logo Reinvente" style="height:48px;">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="pages/quem-somos.html">Quem somos</a></li>
+            <li><a href="pages/solucoes.html">Soluções</a></li>
+            <li><a href="pages/cases.html">Cases</a></li>
+            <li><a href="pages/podcast-landing.html">Podcasts</a></li>
+            <li><a href="pages/auditorio.html">Auditório</a></li>
+            <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+        <button class="navbar-hamburger" aria-label="Abrir menu" id="navbar-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="nav-actions">
+            <a href="tel:+5511999999999" class="nav-btn nav-btn-outline">0800 999 9999</a>
+            <a href="#lead-form" class="nav-btn nav-btn-outline">Contrate a REINVENTE</a>
+        </div>
+        <nav class="navbar-mobile-menu" id="navbar-mobile-menu">
+            <ul>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#servicos">Soluções</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Na imprensa</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <!-- 2.2 Hero Page -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>REINVENTE </h1>
+            <p>Onde<span> seu propósito</span><br>Ganha voz</p>
+            <a href="#lead-form" class="cta-btn">Vem Ser Reinvente → </a>
+        </div>
+        <div class="hero-img">
+            <img src="source/imgs/bulb.gif" alt="Garoto Propaganda Reinvente">
+        </div>
+    </section>
+
+    <!-- 2.3 Área de Redirecionamento de Serviços -->
+    <section class="servicos-cards" id="servicos">
+        <h2 class="servicos-cards-title">
+            A RE<span class="servicos-cards-highlight">INVENTE</span> é para quem quer:
+        </h2>
+        <div class="servicos-cards-grid">
+
+            <div class="servico-card">
+                <div class="servico-card-icon"><span>📄</span></div>
+                <div class="servico-card-title">Mais Vendas</div>
+                <div class="servico-card-desc">Impulsione seu negócio nas redes sociais e converta seguidores em clientes com técnicas de alta performance!</div>
+            </div>
+             <div class="servico-card">
+                <div class="servico-card-icon"><span>💻</span></div>
+                <div class="servico-card-title">Autoridade de Mercado</div>
+                <div class="servico-card-desc">Temos time de BI e tecnologia para integrações completas, tagueamentos, APIs, e muito mais.</div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-card-icon"><span>📝</span></div>
+                <div class="servico-card-title">Gestão de Projetos</div>
+                <div class="servico-card-desc">Identificamos e conquistamos leads dentro do seu perfil ideal de cliente, onde quer que eles estejam, potencializando suas oportunidades e ampliando significativamente o poder de vendas da sua empresa!</div>
+            </div>
+            
+            <div class="servico-card">
+                <div class="servico-card-icon"><span>👥</span></div>
+                <div class="servico-card-title">Equipe Especializada</div>
+                <div class="servico-card-desc">Equipe de marketing altamente especializada para impulsionar suas vendas, fortalecer sua marca no mercado e gerar resultados sólidos e consistentes para o crescimento do seu negócio!</div>
+            </div>
+           
+            <div class="servico-card">
+                <div class="servico-card-icon"><span>🔗</span></div>
+                <div class="servico-card-title">Produção Audiovisual</div>
+                <div class="servico-card-desc">O melhor das campanhas de branding, com segmentações avançadas de público.</div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-card-icon"><span>📊</span></div>
+                <div class="servico-card-title">Criação de Estratégias</div>
+                <div class="servico-card-desc">Nossas campanhas trarão leads cada vez mais qualificados, ao invés de focarmos em volume.</div>
+            </div>
+        </div>
+        <div class="servicos-cards-btn-area">
+            <a href="#" class="servicos-cards-btn">QUERO AGENDAR UMA REUNIÃO</a>
+        </div>
+    </section>
+
+    <!-- 2.4 Seção “Quem Somos” -->
+    <section class="quem-somos" id="quem-somos">
+        <div style="display:flex;align-items:center;">
+            
+            <h1>Quem Somos</h1>
+        </div>
+        <div class="container-info" >
+            <div class="video-container">
+                <video src="source/vds/Institucional Reinvente.mp4" controls ></video>
+            </div>
+            <div class="quem-somos-text">
+                
+                <p>Na Reinvente, transformamos negócios com estratégias de marketing inovadoras e resultados concretos.<br><br>
+    Especializados em Performance, Branding, Tech, Social e Produção Audiovisual, criamos experiências que aumentam engajamento e conversão.<br><br>
+    Com sede em São Paulo e atuação internacional, somos sua parceira estratégica para tráfego pago, marketing e construção de sites.<br><br>
+    Fale agora com um especialista e impulsione seu negócio!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.5 Serviços Detalhados -->
+    <section class="servicos-detalhados" id="servicos-detalhados">
+        <h2 style="text-align:center;">Nossas Soluções em Marketing e Publicidade</h2>
+        <p style="text-align:center;max-width:700px;margin:0 auto 32px auto;">
+            Conheça as soluções que a nossa <strong>agência de marketing</strong> pode oferecer ao seu negócio: tech, branding, performance, assessoria de marketing, institucional, social e muito mais.
+        </p>
+        <div class="servicos-detalhados-grid">
+            <!-- Cada célula representa um serviço -->
+            <div class="servico-detalhado-card" data-servico="performance">
+                <span class="servico-detalhado-title">Performance</span>
+                <span class="servico-detalhado-icon">&#8595;</span>
+                <div class="servico-detalhado-content">
+                    <p>
+                        Maximize o desempenho das suas campanhas com nossas estratégias de marketing inteligentes. Através de análises de dados, otimização de anúncios e monitoramento de métricas, nossa agência de marketing irá garantir que suas campanhas atinjam resultados mensuráveis e um alto retorno positivo sobre o investimento.
+                    </p>
+                    <a href="./pages/solucoes.html" class="servico-detalhado-btn">Saiba mais</a>
+                </div>
+            </div>
+            <div class="servico-detalhado-card" data-servico="social">
+                <span class="servico-detalhado-title">Social</span>
+                <span class="servico-detalhado-icon">&#8595;</span>
+                <div class="servico-detalhado-content">
+                    <p>
+                        Gestão completa das redes sociais, produção de conteúdo relevante e engajador, análise de audiência e estratégias para aumentar o alcance e engajamento da sua marca.
+                    </p>
+                    <a href="servico-social.html" class="servico-detalhado-btn">Saiba mais</a>
+                </div>
+            </div>
+            <div class="servico-detalhado-card" data-servico="influencia">
+                <span class="servico-detalhado-title">Influência</span>
+                <span class="servico-detalhado-icon">&#8595;</span>
+                <div class="servico-detalhado-content">
+                    <p>
+                        Conecte sua marca com influenciadores e estratégias de marketing de influência para potencializar resultados e conquistar novos públicos.
+                    </p>
+                    <a href="./pages/solucoes.html" class="servico-detalhado-btn">Saiba mais</a>
+                </div>
+            </div>
+            <div class="servico-detalhado-card" data-servico="producao">
+                <span class="servico-detalhado-title">Produção</span>
+                <span class="servico-detalhado-icon">&#8595;</span>
+                <div class="servico-detalhado-content">
+                    <p>
+                        Produção audiovisual, design gráfico e criação de materiais para campanhas publicitárias, institucionais e digitais.
+                    </p>
+                    <a href="./pages/solucoes.html" class="servico-detalhado-btn">Saiba mais</a>
+                </div>
+            </div>
+            <div class="servico-detalhado-card" data-servico="institucional">
+                <span class="servico-detalhado-title">Institucional</span>
+                <span class="servico-detalhado-icon">&#8595;</span>
+                <div class="servico-detalhado-content">
+                    <p>
+                        Fortaleça a imagem institucional da sua empresa com estratégias de comunicação, assessoria de imprensa e relacionamento com stakeholders.
+                    </p>
+                    <a href="./pages/solucoes.html" class="servico-detalhado-btn">Saiba mais</a>
+                </div>
+            </div>
+            <div class="servico-detalhado-card" data-servico="tech">
+                <span class="servico-detalhado-title">Tech</span>
+                <span class="servico-detalhado-icon">&#8595;</span>
+                <div class="servico-detalhado-content">
+                    <p>
+                        Soluções tecnológicas para marketing, integração de sistemas, BI, automação e desenvolvimento de sites e aplicativos.
+                    </p>
+                    <a href="./pages/solucoes.html" class="servico-detalhado-btn">Saiba mais</a>
+                </div>
+            </div>
+            <div class="servico-detalhado-card" data-servico="branding">
+                <span class="servico-detalhado-title">Branding</span>
+                <span class="servico-detalhado-icon">&#8595;</span>
+                <div class="servico-detalhado-content">
+                    <p>
+                        Construção e fortalecimento de marcas, posicionamento estratégico e campanhas de branding para aumentar o valor percebido da sua empresa.
+                    </p>
+                    <a href="./pages/solucoes.html" class="servico-detalhado-btn">Saiba mais</a>
+                </div>
+            </div>
+            <div class="servicos-detalhados-destaque">
+            <span class="servico-detalhado-title">Conheça mais de cada solução de Marketing</span>
+            <a href="./pages/solucoes.html" class="servico-detalhado-btn">Saiba mais &rarr;</a>
+        </div>
+        </div>
+        <!-- Texto destaque fora da grid, sem borda, com background padrão da section -->
+        
+    </section>
+
+    <!-- 2.6 Cases de Sucesso -->
+    <section class="cases" id="cases">
+        <h2 style="text-align:center;">Clientes que confiam na gente</h2>
+        <div class="cases-underline"></div>
+        <div class="cases-logos-grid">
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 1" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 2" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 3" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 4" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 5" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 6" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 7" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 8" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 9" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 10" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 11" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 12" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 13" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 14" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 15" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 16" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_branca.png" alt="Cliente 17" /></div>
+            <div class="case-logo"><img src="source/imgs/logo_roxa.png" alt="Cliente 18" /></div>
+        </div>
+    </section>
+
+    <!-- Podcasts -->
+    <section class="podcasts-section">
+        <div class="podcasts-content">
+            <div class="podcasts-text">
+                <h2>Estúdio de Podcasts Reinvente</h2>
+                <p>
+                    Grave seu podcast com qualidade profissional! Nosso estúdio oferece estrutura completa, equipe especializada, ambiente confortável e equipamentos de ponta para você criar conteúdo livremente. Seja para entrevistas, séries, videocasts ou gravações corporativas, a Reinvente garante suporte total do planejamento à publicação.
+                </p>
+                <a href="podcast-landing.html" class="podcasts-btn">Quero gravar meu podcast</a>
+            </div>
+           <div class="video-container">
+                <video src="source/vds/podcast.mp4" controls ></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Auditório -->
+    <section class="auditorio-section">
+        <div class="auditorio-content">
+            <div class="auditorio-text">
+                <h2>Auditório Reinvente</h2>
+                <p>
+                    Realize conferências, eventos, treinamentos e apresentações em nosso auditório moderno e equipado. Espaço flexível, tecnologia audiovisual, equipe de apoio e localização privilegiada para garantir o sucesso do seu evento. Disponível para empresas, palestrantes e criadores de conteúdo.
+                </p>
+                <a href="auditorio.html" class="auditorio-btn">Saiba mais sobre o auditório</a>
+            </div>
+            <div class="video-container">
+                <video src="source/vds/auditorio.mp4" controls ></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.7 Depoimentos de Clientes -->
+    <section class="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="depoimentos-cards">
+            <div class="depoimento-card">
+                <div class="depoimento-card-top">
+                    <div class="depoimento-card-left">
+                        <span class="depoimento-stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </span>
+                        <span class="depoimento-verified">
+                            <img src="source/imgs/verificado.png" alt="Verificado" />
+                        </span>
+                    </div>
+                    <div class="depoimento-card-right">
+                        <span class="depoimento-google">
+                            <img src="source/imgs/pesquisa.png" alt="Pesquisa" />
+                        </span>
+                    </div>
+                </div>
+                <div class="depoimento-card-text">
+                    Ótimo atendimento, empenho e resultado!
+                </div>
+                <div class="depoimento-card-bottom">
+                    <span class="depoimento-avatar">
+                        <img src="source/imgs/william.png" alt="Avatar William" />
+                    </span>
+                    <span class="depoimento-info">
+                        <span class="depoimento-nome">William Rosendo</span>
+                        <span class="depoimento-data">2025-06-05</span>
+                    </span>
+                </div>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
+            <div class="depoimento-card">
+                <div class="depoimento-card-top">
+                    <div class="depoimento-card-left">
+                        <span class="depoimento-stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </span>
+                        <span class="depoimento-verified">
+                            <img src="source/imgs/verificado.png" alt="Verificado" />
+                        </span>
+                    </div>
+                    <div class="depoimento-card-right">
+                        <span class="depoimento-google">
+                            <img src="source/imgs/pesquisa.png" alt="Pesquisa" />
+                        </span>
+                    </div>
+                </div>
+                <div class="depoimento-card-text">
+                    Atendimento rápido e equipe muito dedicada. Recomendo!
+                </div>
+                <div class="depoimento-card-bottom">
+                    <span class="depoimento-avatar">
+                        <img src="source/imgs/william.png" alt="Avatar William" />
+                    </span>
+                    <span class="depoimento-info">
+                        <span class="depoimento-nome">William Rosendo</span>
+                        <span class="depoimento-data">2025-05-28</span>
+                    </span>
+                </div>
+            </div>
+            <div class="depoimento-card">
+                <div class="depoimento-card-top">
+                    <div class="depoimento-card-left">
+                        <span class="depoimento-stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </span>
+                        <span class="depoimento-verified">
+                            <img src="source/imgs/verificado.png" alt="Verificado" />
+                        </span>
+                    </div>
+                    <div class="depoimento-card-right">
+                        <span class="depoimento-google">
+                            <img src="source/imgs/pesquisa.png" alt="Pesquisa" />
+                        </span>
+                    </div>
+                </div>
+                <div class="depoimento-card-text">
+                    Profissionais excelentes, superaram minhas expectativas!
+                </div>
+                <div class="depoimento-card-bottom">
+                    <span class="depoimento-avatar">
+                        <img src="source/imgs/william.png" alt="Avatar William" />
+                    </span>
+                    <span class="depoimento-info">
+                        <span class="depoimento-nome">William Rosendo</span>
+                        <span class="depoimento-data">2025-05-10</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.10 FAQ – Perguntas Frequentes -->
+    <section class="faq faq-dark" id="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-lista">
+            <div class="faq-item">
+                <button class="faq-pergunta">Como funciona o processo de contratação?</button>
+                <div class="faq-resposta">Após o contato, nossa equipe faz um diagnóstico e apresenta a proposta personalizada.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-pergunta">Quais segmentos atendem?</button>
+                <div class="faq-resposta">Atendemos empresas de todos os portes e segmentos.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-pergunta">Qual o prazo para ver resultados?</button>
+                <div class="faq-resposta">Os primeiros resultados podem ser vistos em até 30 dias, dependendo do serviço.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.12 Contato e Redes Sociais -->
+    <section class="contato-reinvente">
+        <h2>Fale com a Reinvente</h2>
+        <div class="contato-grid">
+            <div class="contato-social-card">
+                <h3>Redes Sociais</h3>
+                <div class="contato-social-icons">
+                    <a href="https://instagram.com/reinventeagencia" target="_blank" class="contato-social-icon instagram">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://facebook.com/reinventeagencia" target="_blank" class="contato-social-icon facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://linkedin.com/company/reinventeagencia" target="_blank" class="contato-social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="contato-social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:contato@reinvente.com.br" class="contato-social-icon email">
+                        <i class="fas fa-envelope"></i> E-mail
+                    </a>
+                </div>
+            </div>
+            <div class="contato-form-card">
+                <h3>Solicite contato da Reinvente</h3>
+                <form class="contato-form-reinvente">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <input type="tel" name="telefone" placeholder="Telefone">
+                    <textarea name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+                    <button type="submit">Quero que a Reinvente entre em contato</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.11 Footer (Rodapé) -->
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="source/imgs/logo_branca.png" alt="Logo Reinvente" >
+                <h3 style="display:none;">Reinvente Agência</h3>
+                <p>Onde seu propósito Ganha voz</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links úteis</h4>
+                <ul>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>Email: contato@reinvente.com.br</p>
+                <p>Telefone: (11) 99999-9999</p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2024 Reinvente Agência. Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="./source/functions/script.js"></script>
+</body>
+
+</html>
