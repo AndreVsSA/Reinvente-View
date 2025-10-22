@@ -62,7 +62,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
+const marquee = document.querySelector('.marquee-content');
+  let normal = true;
+  marquee.addEventListener('click', () => {
+    marquee.style.animationDirection = normal ? 'reverse' : 'normal';
+    normal = !normal;
+  });
 // Formulário de lead (simulação de envio)
 const leadForm = document.querySelector('.lead-form form');
 

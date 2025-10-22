@@ -1,0 +1,209 @@
+.solve-btn {
+    background: #1a73e8;
+    color: #fff;
+    max-width: 280px;
+    padding: 20px 32px;
+    border-radius: 24px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background .2s;
+    margin: 12px;
+    display: inline-block;
+     animation: pulse2 3s infinite; /* Updated animation */
+}
+
+.solucao-detalhe {
+    padding: 56px 32px;
+    
+    margin: 0 auto ;
+    
+    box-shadow: 0 2px 12px rgba(73,39,112,0.08);
+    background: #232323;
+    color: #fff;
+}
+
+.solucao-detalhe-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+  
+    
+}
+.odd {
+    text-align: left;
+}
+.even{
+    text-align: right;
+}
+.solucao-detalhe-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #F8BF1C;
+}
+
+.solucao-detalhe-content p {
+    font-size: 1.18rem;
+    color: #fafafa;
+    line-height: 1.6;
+}
+
+/* Services — cards detalhados (adaptado ao estilo/paleta do site) */
+.services {
+    background-image: url('../imgs/background.png');
+    background-color: #232323; /* adequei para paleta do site */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.services .titlepage {
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.services .titlepage h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+     color: #F8BF1C;
+     }
+.services .titlepage p { color: #e6e6e6; }
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* container / row já seguem alinhamento vertical (mantido) */
+.services .row {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+/* Card padrão (imagem à esquerda) */
+.services .card {
+    display: flex;
+    align-items: center;
+    background-color: #181818; /* escuro como resto do site */
+    border: 2px solid rgba(73,39,112,0.12); /* sutil borda roxa */
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(73,39,112,0.08);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color .25s;
+}
+
+/* Card invertido (imagem à direita) */
+.services .card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #181818;
+    border: 2px solid rgba(73,39,112,0.12);
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(73,39,112,0.08);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color .25s;
+}
+
+.services .card:hover,
+.services .card2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(73,39,112,0.14);
+    border-color: #F8BF1C;
+}
+
+.services .card img,
+.services .card2 img {
+    width: 100%;
+    padding: 15px;
+    max-width: 300px;
+    object-fit: cover;
+    display: block;
+    filter: none;
+    /* background: #000; */
+}
+
+/* Texto do card */
+.services .card-body,
+.services .card2 .card-body {
+    width: 60%;
+    padding: 22px 28px;
+    color: #eaeaea; /* texto claro */
+    text-align: left;
+}
+
+.services .card-title,
+.services .card2 .card-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #F8BF1C; /* destaque dourado */
+    margin-bottom: 10px;
+}
+
+.services .card-text,
+.services .card2 .card-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+
+/* Responsividade: empilha imagem + texto em telas pequenas */
+@media (max-width: 768px) {
+    .services .card,
+    .services .card2 {
+        max-width: 100%;
+        flex-direction: column;
+        margin: 20px 16px;
+    }
+    .services .card img,
+    .services .card2 img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+    .services .card-body,
+    .services .card2 .card-body {
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+    }
+    .services .card-text,
+    .services .card2 .card-text {
+        text-align: center;
+    }
+    .services .card-title,
+    .services .card2 .card-title {
+        text-align: center;
+    }
+}
+
+/* Grid helpers (mantidos para compatibilidade) */
+.services .col-md-12 {
+    width: 100%;
+}
+
+@keyframes pulse2 {
+    0% {
+        box-shadow: 0 0 0 0 rgb(49, 37, 211);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
