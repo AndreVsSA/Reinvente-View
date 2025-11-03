@@ -1,0 +1,637 @@
+:root{
+    --primary: #492770;       /* roxo principal */
+    --accent: #F8BF1C;        /* dourado/accent */
+    --bg-dark: #181818;
+    --bg-mid: #232323;
+    --muted: #d0c8d9;
+    --card: #1f1a23;
+    --gap: 24px;
+    --radius: 12px;
+    --max-width: 1100px;
+    --transition: 220ms ease;
+}
+
+/* Estilos específicos para a página Quem Somos (mv-values) */
+
+/* Variáveis rápidas — troque aqui se quiser ajustar a paleta */
+:root {
+    --bg: #0f0f10;
+    --card-bg: #0d0d0e;
+    --pink: #75297c; /* cor da borda/underline (antes #e91e63) */
+    --text: #ffffff;
+    --muted: #d6d6d6;
+    --radius: 18px;
+    --container-max: 1300px;
+}
+
+/* Neon glow: usa a mesma paleta púrpura definida globalmente */
+:root {
+    --qs-neon: #e962e9;
+    --qs-neon-soft: rgba(155, 95, 224, 0.14);
+    --qs-neon-strong: rgba(157, 100, 221, 0.28);
+}
+
+/* Container utilitário */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+.section-header h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin: 0 0 8px 0;
+}
+.section-header .lede {
+    color: #e6e6e6;
+    margin: 0;
+}
+
+/* Missão / Visão / Valores */
+.mv-values {
+    background: var(--bg);
+    color: var(--text);
+    padding: 56px 0;
+}
+.mv-inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+    box-sizing: border-box;
+    background: transparent;
+}
+.mv-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: start;
+    margin-bottom: 48px;
+}
+.mv-title-wrap {
+   text-align: center;
+}
+
+.mv-title-wrap h2 {
+    font-size: 56px;
+    line-height: 1;
+    margin: 0 0 6px 0;
+    font-weight: 800;
+    text-align: center;
+    color: var(--text);
+    position: relative;
+    padding-bottom: 10px;
+}
+.mv-title-wrap h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: var(--pink); /* antes #50297c */
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mv-intro p {
+    color: var(--muted);
+    font-size: 1.02rem;
+    line-height: 1.75;
+    margin: 0;
+}
+.mv-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: center;
+}
+.mv-card {
+    background: var(--card-bg);
+    border: 2px solid var(--pink);
+    border-radius: var(--radius);
+    padding: 40px;
+    min-height: 340px;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.mv-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(80,41,124,0.16);
+    border-color: var(--qs-neon);
+}
+.mv-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink); /* antes #50297c */
+    background: transparent;
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.mv-card h3 {
+    margin: 0 0 14px 0;
+    color: var(--text);
+    font-size: 28px;
+    font-weight: 700;
+}
+.mv-card p {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+.mv-values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--muted);
+    justify-content: space-between;
+    font-size: 0.98rem;
+}
+.mv-values-list li {
+    position: relative;
+    width: 100%;
+    max-width: 124px;
+    padding-left: 24px;
+}
+.mv-values-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--pink);
+    font-weight: 700;
+    top: 0;
+}
+.card {
+    background: var(--card);
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    border: 1px solid rgba(73,39,112,0.06);
+}
+.card h3 {
+    color: var(--primary);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.card p {
+    color: #ddd;
+    margin: 0;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(73,39,112,0.16);
+    border-color: var(--accent);
+}
+
+@media (max-width: 1100px) {
+    .mv-card{
+        max-width: 450px;
+    }
+    .mv-cards {
+        justify-content: center;
+    }
+}
+
+/* Partners — layout idêntico ao print fornecido */
+.partners {
+    background: #111; /* fundo escuro */
+    padding: 64px 0 80px;
+    color: #fff;
+}
+.partners .container {
+    max-width: 1400px;
+    
+}
+.partners .section-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+.partners .section-header h2 {
+    font-size: 48px;
+    margin: 0 0 6px 0;
+    font-weight: 800;
+    color: #fff;
+    position: relative;
+}
+.partners .section-header h2::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 4px;
+    background: var(--pink); /* antes #50297c */
+    margin: 12px auto 0;
+    border-radius: 4px;
+}
+.partners .section-header .lede {
+    color: #cfcfcf;
+    margin-top: 10px;
+}
+
+/* grid de logos */
+.partners-grid {
+    max-width: 1400px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px 48px;
+    align-items: center;
+    justify-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* cartão branco arredondado contendo o logo */
+.partner-item {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 28px;
+    min-width: 220px;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    transition: transform .20s ease, box-shadow .20s ease;
+}
+
+/* centraliza logo dentro do cartão e limita tamanho */
+.partner-item img {
+    display: block;
+    max-width: 180px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* efeito hover */
+.partner-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+}
+
+/* quando houver um único item na segunda linha ele ficará centrado automaticamente */
+/* responsividade */
+@media (max-width: 1100px) {
+    .partners .section-header h2 { font-size: 40px; }
+    .partners-grid {  gap: 28px; }
+    .partner-item { min-width: 160px; padding: 18px 20px; }
+    .partner-item img { max-width: 140px; max-height: 60px; }
+}
+
+@media (max-width: 600px) {
+    .partners .section-header h2 { font-size: 28px; }
+    .partners-grid {  gap: 18px; }
+    .partner-item {  padding: 16px 48px; margin: 0 auto; }
+    .partner-item img { max-width: 220px; max-height: 80px; }
+}
+
+/* Lideranças */
+.leadership {
+    display: flex;
+    justify-content: center;
+    background: var(--bg-mid);
+    padding: 56px 0;
+    color: #fff;
+}
+.leadership .container {
+    max-width: 1300px;
+    margin: 0 ;
+    
+}
+.leaders-grid {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.leader-card {
+    background: transparent;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 2px solid var(--pink); /* antes #50297c */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    width: 300px;
+    height: 360px;
+    display: block;
+    position: relative;
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+/* Figura que ocupa a maior parte do card */
+.leader-figure {
+    width: 100%;
+    height: 360px; /* altura aproximada do print */
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+.leader-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay inferior com info (barra preta semelhante ao print) */
+.leader-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.65) 35%, rgba(0,0,0,1) 100%);
+    padding: 18px 20px;
+    box-sizing: border-box;
+    gap: 12px;
+}
+
+/* info textual à esquerda */
+.leader-info {
+    display: flex;
+    flex-direction: column;
+}
+.leader-info h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+}
+.leader-role {
+    color: #d1d1d1;
+    font-size: 0.95rem;
+    margin-top: 6px;
+}
+
+/* seta rosa à direita */
+.leader-arrow {
+    color: var(--pink); /* antes #50297c */
+    font-size: 1.8rem;
+    font-weight: 700;
+    
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    transition: background .18s ease, transform .18s ease;
+}
+
+/* hover / foco */
+.leader-card:hover,
+.leader-card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 60px rgba(80,41,124,0.16), 0 8px 24px rgba(0,0,0,0.54);
+    border-color: var(--qs-neon);
+}
+.leader-card:hover .leader-arrow {
+    background: rgba(80,41,124,0.06);
+    transform: translateX(6px);
+    box-shadow: 0 6px 18px rgba(80,41,124,0.10);
+}
+
+/* Ajuste do outline de foco para sentir neon */
+.leader-card:focus {
+    outline: 3px solid rgba(80,41,124,0.12);
+    outline-offset: 6px;
+}
+
+/* underline / after dos títulos (garante brilho sutil) */
+.mv-title-wrap h2::after,
+.partners .section-header h2::after,
+.section-header h2::after {
+    box-shadow: 0 6px 20px rgba(80,41,124,0.12);
+}
+
+/* leader-details active state: enfatiza borda com leve glow */
+.leader-card.active {
+    box-shadow: 0 28px 60px rgba(80,41,124,0.18), 0 8px 24px rgba(0,0,0,0.54);
+}
+
+/* garantia mobile: hovers mais discretos em telas pequenas */
+@media (max-width: 680px) {
+    .leader-card:hover { box-shadow: 0 16px 34px rgba(80,41,124,0.10); }
+    .partner-item:hover { box-shadow: 0 12px 28px rgba(80,41,124,0.08); }
+}
+
+/* Accessibility */
+.leader-card:focus { outline: 3px solid rgba(233,30,99,0.12); outline-offset: 4px; }
+
+/* Formulário detalhado */
+.contact-detailed {
+    background: #0b0b0c;
+    color: #fff;
+    padding: 56px 0;
+}
+.contact-form {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid rgba(73,39,112,0.06);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+.contact-form .form-row {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    font-size: .9rem;
+    margin-bottom: 8px;
+    color: #e6e6e6;
+}
+.footer-info h4 {
+    
+    color: var(--qs-neon)
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="number"],
+.contact-form select,
+.contact-form textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: #121212;
+    color: #fff;
+    outline: none;
+    transition: box-shadow var(--transition), border-color var(--transition);
+    font-size: .95rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    box-shadow: 0 6px 20px rgba(73,39,112,0.18);
+    border-color: var(--accent);
+}
+.contact-form textarea { grid-column: 1 / -1; resize: vertical; min-height: 140px; }
+.contact-form .form-actions { grid-column: 1 / -1; display:flex; justify-content:flex-end; }
+.btn-primary {
+    background: var(--pink);
+    color: var(--text);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(73,39,112,0.18);
+}
+
+/* Accessibility: focus outlines */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid rgba(248,191,28,0.18);
+    outline-offset: 2px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .mv-grid { grid-template-columns: repeat(2, 1fr); }
+    .leaders-grid { flex-wrap: wrap; }
+    .partners-grid { grid-template-columns: repeat(4, 1fr); }
+    .contact-form { grid-template-columns: 1fr; padding: 20px; }
+}
+@media (max-width: 680px) {
+    .mv-grid { grid-template-columns: 1fr; }
+    .leaders-grid { grid-template-columns: 1fr; }
+    .partners-grid { grid-template-columns: repeat(2, 1fr); }
+    .partners-grid img { max-width: 90px; }
+    .section-header h2 { font-size: 1.5rem; }
+    .contact-form { padding: 16px; gap: 12px; }
+}
+
+/* Comentários:
+ - Para trocar cores: ajustar variáveis em :root (--primary, --accent, --bg-dark, etc).
+ - Para trocar imagens de parceiros/líderes: usar arquivos em source/imgs/ e atualizar src nos <img>.
+ - Para alterar textos, edite o HTML nas tags <p>, <h3>, <h4> correspondentes.
+ - Para ajustar a cor rosa conforme sua marca, altere --pink.
+ - Trocar ícones: use classes FontAwesome em <i> dentro de .mv-icon.
+ - Ajuste tamanhos de fonte em .mv-title-wrap h2 e .mv-card h3 se necessário.
+*/
+
+
+/* mobile / tablet responsiveness */
+@media (max-width: 1100px) {
+    .leaders-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    
+}
+
+@media (max-width: 680px) {
+    .leaders-grid { grid-template-columns: 1fr; gap: 18px; }
+ 
+    .leader-info h4 { font-size: 1.1rem; }
+    .leader-arrow { width: 40px; height: 40px; font-size: 1.4rem; }
+}
+
+/* Accessibility */
+.leader-card:focus { outline: 3px solid rgba(233,30,99,0.12); outline-offset: 4px; }
+
+/* Tips:
+ - Para trocar as fotos, substitua ../source/imgs/william.png pelos arquivos reais.
+ - Ajuste a altura .leader-figure height para calibrar o corte das imagens.
+ - Altere a cor rosa trocando #E91E63.
+*/
+
+/* Vídeo institucional — ocupa largura, responsivo */
+.institucional-video-section {
+    background: #0b0b0c;
+    padding: 28px 0 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.institucional-video-inner {
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.institucional-video {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    border-radius: 12px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+    background: #000;
+    display: block;
+    outline: none;
+}
+
+/* Unificar aparência do título + underline rosa como em mv-values */
+.partners .section-header h2,
+.contato-reinvente h2,
+.section-header h2 {
+    /* mantém compatibilidade com outros h2; override para garantir uniformidade */
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+}
+
+/* aplicar same after (linha rosa) */
+.partners .section-header h2::after,
+.contato-reinvente h2::after,
+.section-header h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: var(--pink); /* antes #50297c */
+    border-radius: 4px;
+    margin-top: 12px;
+    /* centraliza para títulos centralizados */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Caso a section tenha título alinhado à esquerda (ex.: mv-top title), mantém comportamento */
+/* .mv-title-wrap h2::after,
+.section-header.text_align_left h2::after {
+    margin-left: 0;
+    margin-right: 0;
+} */
+
+/* Ajustes responsivos do after */
+@media (max-width: 680px) {
+    .partners .section-header h2::after,
+    .contato-reinvente h2::after,
+    .section-header h2::after {
+        width: 90px;
+        height: 3px;
+    }
+}

@@ -6,6 +6,7 @@
     <title>Quem Somos | Reinvente Agência</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../source/css/style.css">
+    <link rel="stylesheet" href="../source/css/quem-somos.css">
     <!-- Adicione o Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -46,26 +47,225 @@
         </nav>
     </nav>
 
-    <section class="quem-somos" id="quem-somos">
-        <h1>Quem Somos</h1>
-        <div class="container-info">
-            <div class="video-container">
-                <video src="../source/vds/Institucional Reinvente.mov" controls></video>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>REINVENTE </h1>
+            <p>Onde<span> seu propósito</span><br>Ganha voz</p>
+            <a href="#lead-form" class="cta-btn">Vem Ser Reinvente → </a>
+        </div>
+        <div class="hero-img">
+            <img src="../source/imgs/bulb.gif" alt="Garoto Propaganda Reinvente">
+        </div>
+    </section>
+
+    <!-- Missão / Visão / Valores — reproduzido conforme print -->
+    <section class="mv-values" aria-labelledby="mv-title">
+        <div class="mv-inner container">
+            <div class="mv-top">
+                <div class="mv-title-wrap">
+                    <h2 id="mv-title">Quem somos</h2>
+                </div>
+                <div class="mv-intro">
+                    <p>
+                        Com mais de <strong>12 anos</strong> no mercado, a Reinvente é uma agência que tem o propósito de <strong>transformar negócios através da comunicação</strong>. Trazemos soluções de <strong>Performance, Social Media, Institucional, Tech, Branding e Produção</strong>, potencializando os negócios de empresas e usando a estratégia e excelência como marca principal.
+                    </p>
+                </div>
             </div>
-            <div class="quem-somos-text">
-                
-                <p>Na Reinvente, transformamos negócios com estratégias de marketing inovadoras e resultados concretos.<br><br>
-    Especializados em Performance, Branding, Tech, Social e Produção Audiovisual, criamos experiências que aumentam engajamento e conversão.<br><br>
-    Com sede em São Paulo e atuação internacional, somos sua parceira estratégica para tráfego pago, marketing e construção de sites.<br><br>
-    Fale agora com um especialista e impulsione seu negócio!</p>
+
+            <div class="mv-cards">
+                <article class="mv-card">
+                    <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Missão</h3>
+                    <p>Criar experiências únicas e entregar excelência em cada projeto.</p>
+                </article>
+
+                <article class="mv-card">
+                    <div class="mv-icon"><i class="fas fa-award"></i></div>
+                    <h3>Visão</h3>
+                    <p>Estar entre as melhores agências globais em até 10 anos.</p>
+                </article>
+
+                <article class="mv-card">
+                    <div class="mv-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Valores</h3>
+                    <ul class="mv-values-list">
+                        <li>Excelência</li>
+                        <li>Transparência</li>
+                        <li>Resiliência</li>
+                        <li>Flexibilidade</li>
+                        <li>Criatividade</li>
+                        <li>Inovação</li>
+                        <li>Colaboração</li>
+                    </ul>
+                </article>
             </div>
+        </div>
+    </section>
+
+    <!-- Seção vídeo institucional (ocupa quase toda a section) -->
+    <section class="institucional-video-section" aria-label="Vídeo institucional">
+        <div class="institucional-video-inner container">
+            <!-- Substitua o src abaixo pelo caminho correto do vídeo se necessário -->
+            <video class="institucional-video" src="../source/vds/Institucional Reinvente.mp4" controls playsinline preload="metadata"></video>
+        </div>
+    </section>
+
+    <!-- Parceiros (grid de logos) -->
+    <section class="partners" aria-labelledby="partners-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="partners-title">Parceiros</h2>
+                <p class="lede">Algumas marcas que confiam na Reinvente (placeholders).</p>
+            </div>
+            <div class="partners-grid" role="list">
+                <!-- cada logo em um cartão branco arredondado -->
+                <div class="partner-item"><img src="../source/imgs/logo_roxa.png" alt="Parceiro 1" role="listitem"></div>
+                <div class="partner-item"><img src="../source/imgs/logo_roxa.png" alt="Parceiro 2" role="listitem"></div>
+                <div class="partner-item"><img src="../source/imgs/logo_roxa.png" alt="Parceiro 3" role="listitem"></div>
+                <div class="partner-item"><img src="../source/imgs/logo_roxa.png" alt="Parceiro 4" role="listitem"></div>
+
+                <!-- segunda linha, logo centralizado -->
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Lideranças (atualizado para layout tipo "cards" com overlay inferior) -->
+    <section class="leadership" aria-labelledby="leadership-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="leadership-title">Conheça nossas lideranças</h2>
+                <p class="lede">Equipe multidisciplinar à frente da Reinvente.</p>
+            </div>
+
+            <div class="leaders-grid">
+                <article class="leader-card">
+                    <figure class="leader-figure">
+                        <img src="../source/imgs/william.png" alt="William Rosendo">
+                    </figure>
+                    <div class="leader-overlay">
+                        <div class="leader-info">
+                            <h4>William Rosendo</h4>
+                            <span class="leader-role">CEO & Estratégia</span>
+                        </div>
+                        
+                    </div>
+                </article>
+
+                <article class="leader-card">
+                    <figure class="leader-figure">
+                        <img src="../source/imgs/william.png" alt="Rafael Beraldi">
+                    </figure>
+                    <div class="leader-overlay">
+                        <div class="leader-info">
+                            <h4>Rafael Beraldi</h4>
+                            <span class="leader-role">Co-founder & CMO</span>
+                        </div>
+                        
+                    </div>
+                </article>
+
+                <article class="leader-card">
+                    <figure class="leader-figure">
+                        <img src="../source/imgs/william.png" alt="Catherine Barros">
+                    </figure>
+                    <div class="leader-overlay">
+                        <div class="leader-info">
+                            <h4>Catherine Barros</h4>
+                            <span class="leader-role">Diretora de Operações</span>
+                        </div>
+                       
+                    </div>
+                </article>
+
+                <article class="leader-card">
+                    <figure class="leader-figure">
+                        <img src="../source/imgs/william.png" alt="Bruno Gimenes">
+                    </figure>
+                    <div class="leader-overlay">
+                        <div class="leader-info">
+                            <h4>Bruno Gimenes</h4>
+                            <span class="leader-role">Gestor de Negócios</span>
+                        </div>
+                        
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de contato detalhado -->
+    <section class="contact-detailed" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="contact-title">Solicite contato</h2>
+                <p class="lede">Preencha os dados abaixo que entraremos em contato.</p>
+            </div>
+
+            <form class="contact-form" action="#" method="post" novalidate>
+                <!-- Nome completo -->
+                <div class="form-row">
+                    <label for="nome">Nome completo *</label>
+                    <input id="nome" name="nome" type="text" required placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-row">
+                    <label for="cargo">Cargo</label>
+                    <input id="cargo" name="cargo" type="text" placeholder="Seu cargo na empresa">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">E‑mail *</label>
+                    <input id="email" name="email" type="email" required placeholder="email@empresa.com">
+                </div>
+
+                <div class="form-row">
+                    <label for="empresa">Nome da empresa *</label>
+                    <input id="empresa" name="empresa" type="text" required placeholder="Nome da empresa">
+                </div>
+
+                <div class="form-row">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" name="telefone" type="tel" pattern="[\d\s()+-]{6,}" placeholder="+55 (11) 9xxxx-xxxx">
+                </div>
+
+                <div class="form-row">
+                    <label for="funcionarios">Nº de funcionários</label>
+                    <input id="funcionarios" name="funcionarios" type="number" min="1" placeholder="Quantidade de colaboradores">
+                </div>
+
+                <div class="form-row">
+                    <label for="segmento">Segmento</label>
+                    <input id="segmento" name="segmento" type="text" placeholder="Ex: Varejo, Saúde, Tecnologia">
+                </div>
+
+                <div class="form-row">
+                    <label for="faturamento">Faturamento anual</label>
+                    <select id="faturamento" name="faturamento">
+                        <option value="">Selecione</option>
+                        <option value="<1m">Menos de R$1M</option>
+                        <option value="1-10m">R$1M – R$10M</option>
+                        <option value="10-50m">R$10M – R$50M</option>
+                        <option value=">50m">Mais de R$50M</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Como podemos ajudar?" rows="6"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Enviar solicitação</button>
+                </div>
+                <!-- Observação: substitua action="#" por endpoint real ou integre com backend -->
+            </form>
         </div>
     </section>
 
     <footer class="footer">
         <div class="footer-info">
             <div class="footer-logo">
-                <img src="logo_branca.png" alt="Logo Reinvente">
+                <img src="../source/imgs/logo_branca.png" alt="Logo Reinvente">
                 <h3 style="display:none;">Reinvente Agência</h3>
                 <p>Onde seu propósito Ganha voz</p>
             </div>
@@ -89,4 +289,22 @@
         </div>
     </footer>
     <script src="../source/functions/script.js"></script>
+    <script>
+    // Pequeno reforço de validação: mostra mensagem ao enviar com campos inválidos
+    (function() {
+        const form = document.querySelector('.contact-form');
+        if (!form) return;
+        form.addEventListener('submit', function(e) {
+            if (!form.checkValidity()) {
+                // deixa o navegador exibir validação nativa
+                return;
+            }
+            e.preventDefault();
+            alert('Obrigado — sua solicitação foi enviada. Entraremos em contato em breve.');
+            form.reset();
+        });
+    })();
+    </script>
 </body>
+
+</html>

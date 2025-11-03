@@ -263,6 +263,7 @@ body {
     background: #fff;
     color: #181818;
     border-color: #fff;
+    box-shadow: 0 10px 30px var(--neon-purple-soft);
 }
 
 .hero {
@@ -393,7 +394,7 @@ body {
 
 .servico-card:hover {
     transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 10px 40px rgba(80,41,124,0.12), 0 6px 20px rgba(0,0,0,0.18);
 }
 
 .servico-card-icon {
@@ -445,7 +446,7 @@ body {
 
 .servicos-cards-btn:hover {
     background: #13a362;
-    box-shadow: 0 4px 16px rgba(25, 195, 125, 0.22);
+    box-shadow: 0 10px 36px rgba(80,41,124,0.08);
 }
 
 .servicos-detalhados {
@@ -725,21 +726,60 @@ body {
     }
 }
 
-/*  */
+/* Hovers com sensação neon (púrpura) */
+:root {
+	--neon-purple: #50297c;
+	--neon-purple-soft: rgba(80,41,124,0.16);
+	--neon-purple-glow: rgba(80,41,124,0.40);
+}
 
+/* Links do menu — cor neon + brilho */
+.nav-links a:hover {
+    color: #8c59ff; /* tom mais vivo para hover */
+    text-shadow: 0 0 10px rgba(140,89,255,0.35);
+}
 
+/* Botão da navbar — mantém branco, adiciona glow púrpura */
+.nav-btn:hover {
+    background: #fff;
+    color: #181818;
+    border-color: #fff;
+    box-shadow: 0 10px 30px var(--neon-purple-soft);
+}
 
+/* Cartões de serviço — adiciona glow púrpura ao hover sem quebrar o estilo escuro */
+.servico-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 40px rgba(80,41,124,0.12), 0 6px 20px rgba(0,0,0,0.18);
+}
 
+/* Botão principal de cards — sutil glow ao redor */
+.servicos-cards-btn:hover {
+    background: #13a362;
+    box-shadow: 0 10px 36px rgba(80,41,124,0.08);
+}
 
+/* Partner item hover — branco do cartão com glow roxo */
+.partner-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(80,41,124,0.12), 0 6px 18px rgba(0,0,0,0.18);
+}
 
+/* Destaques e links (onde houver dourado no hover, adicionamos pulso roxo) */
+.footer-links a:hover,
+.faq-pergunta:hover,
+.contato-social-icon:hover {
+    box-shadow: 0 8px 28px var(--neon-purple-soft);
+}
 
-blockquote {
-    background: #f5f5f5;
-    border-left: 4px solid #1a73e8;
-    padding: 24px;
-    border-radius: 8px;
-    font-style: italic;
-    margin: 0;
+/* Small neon accent for interactive icons */
+.servico-card-icon,
+.case-logo img {
+    transition: filter .22s ease, box-shadow .22s ease;
+}
+.servico-card-icon:hover,
+.case-logo img:hover {
+    filter: drop-shadow(0 6px 18px var(--neon-purple-glow));
 }
 
 .cta-secundaria {
@@ -1799,3 +1839,5 @@ blockquote {
       transform: translateX(-50%);
     }
   }
+
+/* Variáveis (ajuste paleta aqui) */
