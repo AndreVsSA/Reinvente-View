@@ -28,37 +28,27 @@ if (hamburger && mobileMenu) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Aplica o listener a TODOS os cards (abrangendo toda a área)
+    // Função para abrir/fechar os cards de serviços detalhados
     const cards = document.querySelectorAll(".servico-detalhado-card");
-    let ativo = null;
+    let activeCard = null;
 
     cards.forEach(card => {
         card.addEventListener("click", (event) => {
-            // 2. Verifica se o elemento clicado é um link (<a>) ou um botão
-            //    Se for um link/botão, IGNORA o resto da função (deixa o link funcionar)
-            if (event.target.tagName === 'A' || event.target.tagName === 'BUTTON') {
-                return; 
-            }
-            
-            // 3. Verifica se o clique foi na área do conteúdo (para ignorar cliques na área aberta)
-            //    Para manter o comportamento intuitivo, vamos focar no cabeçalho
-            const titleOrIcon = event.target.closest('.servico-detalhado-title, .servico-detalhado-icon');
-            
-            // Se o clique não foi no título, no ícone, ou no próprio card, ignora.
-            // Para simplificar, focaremos apenas em evitar links:
-            
-            // Lógica do Acordeão
-            if (ativo && ativo !== card) {
-                ativo.classList.remove("active");
+            // Não fazer nada se clicou em um link
+            if (event.target.closest('a')) {
+                return;
             }
 
+            // Fechar o card ativo se for diferente do clicado
+            if (activeCard && activeCard !== card) {
+                activeCard.classList.remove("active");
+            }
+
+            // Toggle do card clicado
             card.classList.toggle("active");
-            ativo = card.classList.contains("active") ? card : null;
-
-            // Se o conteúdo está fechado e o card era ativo, ele precisa ser 'null'
-            if (!card.classList.contains("active")) {
-                ativo = null;
-            }
+            
+            // Atualizar a referência do card ativo
+            activeCard = card.classList.contains("active") ? card : null;
         });
     });
 });
@@ -89,7 +79,6 @@ if (contatoFormReinvente) {
         this.reset();
     });
 }
-<<<<<<< HEAD
 
 // Carousel for podcasts
 const podcastImages = [
@@ -130,5 +119,3 @@ if (auditorioImg) {
         }, 500);
     }, 4000);
 }
-=======
->>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779

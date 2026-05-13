@@ -351,6 +351,8 @@
     padding: 24px 24px 22px;
     min-height: 92px;
     max-height: 92px;
+    overflow: hidden;
+    transition: max-height .3s, box-shadow .2s, border-color .2s, overflow .3s;
     backdrop-filter: blur(14px);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
@@ -361,6 +363,11 @@
     box-shadow: 0 20px 32px rgba(0, 0, 0, 0.28);
 }
 
+.home-page .servico-detalhado-card.active {
+    max-height: 600px;
+    overflow: visible;
+}
+
 .home-page .servico-detalhado-title {
     color: #fff;
     font-size: 1.3rem;
@@ -368,6 +375,11 @@
 
 .home-page .servico-detalhado-icon {
     color: var(--home-accent);
+    transition: transform .3s;
+}
+
+.home-page .servico-detalhado-card.active .servico-detalhado-icon {
+    transform: rotate(180deg);
 }
 
 .home-page .servico-detalhado-content p {
@@ -642,7 +654,7 @@
     }
 
     .home-page .hero {
-        padding: 118px 24px 72px;
+        
         min-height: auto;
     }
 
@@ -690,5 +702,61 @@
         bottom: 16px;
         right: 16px;
         text-align: center;
+    }
+}
+
+/* Mobile (600px) - Correção de overflow */
+@media (max-width: 600px) {
+    .home-page body {
+        overflow-x: hidden;
+    }
+
+    .home-page .hero-actions {
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .home-page .cta-btn {
+        font-size: 0.85rem;
+        padding: 10px 16px;
+        flex: 1 1 calc(50% - 4px);
+        min-width: 120px;
+    }
+
+    .home-page .hero-metrics {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .home-page .hero-metrics span {
+        
+        min-width: auto;
+    }
+
+    .home-page .servicos-cards-btn {
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .home-page .podcasts-btn,
+    .home-page .auditorio-btn {
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .home-page .contato-form-card input,
+    .home-page .contato-form-card textarea,
+    .home-page .contato-form-card button {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .home-page .contato-social-icon {
+        width: 100%;
+        max-width: 100%;
     }
 }
