@@ -89,6 +89,7 @@ if (contatoFormReinvente) {
         this.reset();
     });
 }
+<<<<<<< HEAD
 
 // Carousel for podcasts
 const podcastImages = [
@@ -129,3 +130,5 @@ if (auditorioImg) {
         }, 500);
     }, 4000);
 }
+=======
+>>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779
