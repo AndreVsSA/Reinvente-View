@@ -134,15 +134,12 @@ body {
     padding-top: 70px;
 }
 
-<<<<<<< HEAD
 /* Avoids content clipping behind fixed navbar on internal pages with custom heroes. */
 main,
 section:first-of-type {
     scroll-margin-top: 90px;
 }
 
-=======
->>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779
 .navbar {
     position: fixed;
     top: 0;
@@ -279,11 +276,7 @@ section:first-of-type {
     display: flex;
     align-items: center;
     justify-content: space-around;
-<<<<<<< HEAD
   
-=======
-    padding: 120px 32px 64px 32px;
->>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779
     background: linear-gradient(90deg, #4927704f 60%, #492770b9 100%), #000;
     min-height: 400px;
     height: 100%;
@@ -886,11 +879,7 @@ section:first-of-type {
 .footer {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     background: #0a0a0f;
-=======
-    background: #181818;
->>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779
     text-align: center;
     color: #fff;
     padding: 48px 32px 24px 32px;
@@ -979,11 +968,7 @@ section:first-of-type {
 .footer-copy {
     margin-top: 32px;
     font-size: 0.9rem;
-<<<<<<< HEAD
     color: rgba(255, 255, 255, 0.68);
-=======
-    color: #aaa;
->>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779
 }
 @media (max-width: 900px) {
     .footer-info {
@@ -1194,7 +1179,6 @@ section:first-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     height: 100px;
     width: 100px;
     background: #fff;
@@ -1208,19 +1192,6 @@ section:first-of-type {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-=======
-    height: 80px;
-    width: 120px;
-    background: none;
-    border-radius: 18px;
-    transition: box-shadow .2s;
-}
-
-.case-logo img {
-    max-width: 100px;
-    max-height: 60px;
-    object-fit: contain;
->>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779
     filter: drop-shadow(0 2px 8px rgba(0,0,0,0.12));
     transition: transform 0.2s;
 }
@@ -1769,7 +1740,6 @@ section:first-of-type {
     box-shadow: 0 2px 12px rgba(25,195,125,0.10);
 }
 
-<<<<<<< HEAD
 .carousel {
     display: flex;
     min-width: 260px;
@@ -1791,8 +1761,6 @@ section:first-of-type {
     transition: opacity 0.5s ease;
 }
 
-=======
->>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779
 /* Responsividade para Podcasts e Auditório */
 @media (max-width: 900px) {
     .podcasts-content,
@@ -1801,17 +1769,12 @@ section:first-of-type {
         gap: 32px;
         align-items: center;
     }
-<<<<<<< HEAD
     .podcasts-content .carousel,
     .auditorio-content .carousel {
         margin-top: 32px;
     }
     .podcasts-content .carousel img,
     .auditorio-content .carousel img {
-=======
-    .podcasts-content .video-container video,
-    .auditorio-content .video-container video {
->>>>>>> b005261a07ff1587cb2547e9eab0276acc74f779
         max-width: 98vw;
     }
     .podcasts-text,
