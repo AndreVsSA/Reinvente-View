@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
-<body>
+<body class="auditorio-page">
     <nav class="navbar navbar-dark">
         <div class="logo logo-reinvente">
             <a href="../index.html">
@@ -44,35 +44,20 @@
         </nav>
     </nav>
 
-    <section class="aud-pro-hero" id="auditorio-topo">
-        <div class="aud-pro-container aud-pro-hero__content">
-            <div class="aud-pro-hero__copy">
-                <p class="aud-pro-kicker">Locação corporativa e eventos</p>
-                <h1>Auditório pronto para palestras, treinamentos e experiências de alto impacto</h1>
-                <p>
-                    Estrutura profissional, suporte técnico e ambientação premium para transformar seu evento em uma
-                    experiência memorável. Reserve o espaço da Reinvente para encontros presenciais e híbridos.
-                </p>
-                <div class="aud-pro-hero__actions">
-                    <a href="#orcamento-auditorio" class="aud-pro-btn aud-pro-btn--primary">Solicitar proposta</a>
-                    <a href="https://wa.me/5511916108176" target="_blank" class="aud-pro-btn aud-pro-btn--ghost">Falar no WhatsApp</a>
-                </div>
-                <div class="aud-pro-badges">
-                    <span><i class="fas fa-wifi"></i> Internet de alta velocidade</span>
-                    <span><i class="fas fa-video"></i> Captação e transmissão</span>
-                    <span><i class="fas fa-people-group"></i> Ambiente para eventos corporativos</span>
-                </div>
-            </div>
-
-            <div class="aud-pro-hero__media">
-                <div class="carousel" id="auditorio-carousel" aria-label="Fotos do auditório">
-                    <img src="../source/imgs/estudio 1.jpg" alt="Auditório Reinvente preparado para eventos">
-                </div>
+    <section class="aud-pro-hero qs-hero hero" id="auditorio-topo">
+        <div class="hero-text hero-text-centered">
+            <h1>Auditório pronto para palestras, treinamentos e experiências de alto impacto</h1>
+            <div class="hero-actions">
+                <a href="#orcamento-auditorio" class="cta-btn">Solicitar proposta</a>
+                <a href="https://wa.me/5511916108176" target="_blank" class="cta-btn cta-btn-secondary">Falar no WhatsApp</a>
             </div>
         </div>
+        <a href="#estrutura-auditorio" class="qs-scroll-indicator" aria-label="Rolar para a estrutura do auditório">
+            <span></span>
+        </a>
     </section>
 
-    <section class="aud-pro-structure" aria-label="Estrutura do auditório">
+    <section class="aud-pro-structure" id="estrutura-auditorio" aria-label="Estrutura do auditório">
         <div class="aud-pro-container">
             <div class="aud-pro-section-head">
                 <h2>Estrutura completa para seu evento</h2>
@@ -103,6 +88,20 @@
             </div>
         </div>
     </section>
+
+ <section class="home-photo-loop" aria-label="Galeria contínua do auditório Reinvente">
+        <div class="home-photo-track">
+            <img src="../source/imgs/estudio 1.jpg" alt="Auditório Reinvente 1">
+            <img src="../source/imgs/estudio 2.jpg" alt="Auditório Reinvente 2">
+            <img src="../source/imgs/estudio 3.jpg" alt="Auditório Reinvente 3">
+            <img src="../source/imgs/estudio 4.jpg" alt="Auditório Reinvente 4">
+            <img src="../source/imgs/estudio 1.jpg" alt="Auditório Reinvente 1 repetição">
+            <img src="../source/imgs/estudio 2.jpg" alt="Auditório Reinvente 2 repetição">
+            <img src="../source/imgs/estudio 3.jpg" alt="Auditório Reinvente 3 repetição">
+            <img src="../source/imgs/estudio 4.jpg" alt="Auditório Reinvente 4 repetição">
+        </div>
+    </section>
+
 
     <section class="aud-pro-use-cases" aria-label="Formatos de eventos">
         <div class="aud-pro-container aud-pro-use-cases__grid">
@@ -138,30 +137,8 @@
         </div>
     </section>
 
-    <section class="aud-pro-proof" aria-label="Prova de credibilidade">
-        <div class="aud-pro-container">
-            <div class="aud-pro-section-head">
-                <h2>Por que escolher a Reinvente</h2>
-                <p>Mais do que locação de espaço: entregamos padrão profissional do início ao fim.</p>
-            </div>
-
-            <div class="aud-pro-proof-grid">
-                <article>
-                    <span>Atendimento ágil</span>
-                    <strong>Retorno comercial em até 24h úteis</strong>
-                </article>
-                <article>
-                    <span>Formato sob medida</span>
-                    <strong>Configuração adaptada ao objetivo do evento</strong>
-                </article>
-                <article>
-                    <span>Entrega orientada a resultado</span>
-                    <strong>Experiência que valoriza sua marca diante do público</strong>
-                </article>
-            </div>
-        </div>
-    </section>
-
+   
+    
     <section class="aud-pro-form" id="orcamento-auditorio" aria-label="Formulário de orçamento">
         <div class="aud-pro-container aud-pro-form__grid">
             <div class="aud-pro-form__copy">

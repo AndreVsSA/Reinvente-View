@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
-<body>
+<body class="solucoes-page">
     <nav class="navbar navbar-dark">
         <div class="logo logo-reinvente">
             <a href="../index.html">
@@ -44,23 +44,190 @@
         </nav>
     </nav>
 
-    <section class="solucoes-page-hero" id="solucoes-topo">
-        <div class="solucoes-wrap solucoes-page-hero-grid">
-            <div class="solucoes-page-hero-copy">
-                <p class="solucoes-kicker">Metodologia Reinvente</p>
-                <h1>Soluções integradas para transformar estratégia em resultado</h1>
-                <p>
-                    Trabalhamos com um modelo de operação multidisciplinar que conecta posicionamento, conteúdo,
-                    performance e tecnologia para acelerar o crescimento das marcas.
-                </p>
-                <div class="solucoes-hero-tags">
-                    <span><i class="fas fa-bullseye"></i> Objetivo claro</span>
-                    <span><i class="fas fa-chart-line"></i> Decisão por dados</span>
-                    <span><i class="fas fa-layer-group"></i> Execução 360</span>
-                </div>
+    <section class="solucoes-hero qs-hero hero" id="solucoes-topo">
+        <div class="hero-text hero-text-centered">
+            <h1>Transformando sua presença em resultado</h1>
+            <div class="hero-actions">
+                <a href="#catalogo-servicos" class="cta-btn">Explorar serviços</a>
+                <a href="https://wa.me/5511916108176" target="_blank" class="cta-btn cta-btn-secondary">Falar com especialista</a>
             </div>
-            <div class="solucoes-page-hero-media">
-                <img src="../source/imgs/bulb.gif" alt="Equipe Reinvente em processo criativo">
+        </div>
+        <a href="#catalogo-servicos" class="qs-scroll-indicator" aria-label="Rolar para o catálogo de serviços">
+            <span></span>
+        </a>
+    </section>
+
+    <section class="solucoes-catalogo" id="catalogo-servicos">
+        <div class="solucoes-wrap">
+            <header class="solucoes-section-head">
+                <h2>Portfólio de serviços Reinvente</h2>
+                <p>Selecione um serviço para ver como funciona, o que está incluso e qual resultado ele acelera.</p>
+            </header>
+
+            <div class="solucoes-cards-grid">
+                <article class="solucoes-mini-card">
+                    <div class="solucoes-mini-icon"><i class="fas fa-camera"></i></div>
+                    <h3>Captação de conteúdo presencial</h3>
+                    <p>Equipe audiovisual e equipamento de ponta para registrar conteúdos com padrão de campanha.</p>
+                    <button type="button" class="solucoes-card-link" data-service="captacao">Ver funcionamento</button>
+                </article>
+                <article class="solucoes-mini-card">
+                    <div class="solucoes-mini-icon"><i class="fas fa-microphone-alt"></i></div>
+                    <h3>Estúdio de podcast</h3>
+                    <p>Estrutura completa para gravar seu programa original com qualidade profissional.</p>
+                    <button type="button" class="solucoes-card-link" data-service="podcast">Ver funcionamento</button>
+                </article>
+                <article class="solucoes-mini-card">
+                    <div class="solucoes-mini-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Auditório para eventos</h3>
+                    <p>Espaço para eventos corporativos, lives e treinamentos com suporte técnico.</p>
+                    <button type="button" class="solucoes-card-link" data-service="auditorio">Ver funcionamento</button>
+                </article>
+                <article class="solucoes-mini-card">
+                    <div class="solucoes-mini-icon"><i class="fas fa-hashtag"></i></div>
+                    <h3>Gestão de redes sociais</h3>
+                    <p>Planejamento e execução editorial para presença consistente e relevante.</p>
+                    <button type="button" class="solucoes-card-link" data-service="redes">Ver funcionamento</button>
+                </article>
+                <article class="solucoes-mini-card">
+                    <div class="solucoes-mini-icon"><i class="fas fa-compass"></i></div>
+                    <h3>Posicionamento online</h3>
+                    <p>Direcionamento estratégico para fortalecer autoridade digital e diferenciação.</p>
+                    <button type="button" class="solucoes-card-link" data-service="posicionamento">Ver funcionamento</button>
+                </article>
+                <article class="solucoes-mini-card">
+                    <div class="solucoes-mini-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Branding</h3>
+                    <p>Construção de marca com mensagem clara, identidade forte e valor percebido.</p>
+                    <button type="button" class="solucoes-card-link" data-service="branding">Ver funcionamento</button>
+                </article>
+                <article class="solucoes-mini-card">
+                    <div class="solucoes-mini-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Comunicação mercadológica</h3>
+                    <p>Campanhas e narrativas orientadas para conectar oferta, contexto e audiência.</p>
+                    <button type="button" class="solucoes-card-link" data-service="comunicacao">Ver funcionamento</button>
+                </article>
+                <article class="solucoes-mini-card solucoes-mini-card-destaque">
+                    <div class="solucoes-mini-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Automação</h3>
+                    <p>Fluxos inteligentes para escalar atendimento, nutrição e operação comercial.</p>
+                    <button type="button" class="solucoes-card-link" data-service="automacao">Ver funcionamento</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="solucoes-explorer" id="detalhes-servicos">
+        <div class="solucoes-wrap">
+            <div class="solucoes-explorer-grid">
+                <aside class="solucoes-tab-list" role="tablist" aria-label="Serviços da Reinvente">
+                    <button class="solucoes-tab-btn active" type="button" role="tab" aria-selected="true" data-service="captacao">Captação presencial</button>
+                    <button class="solucoes-tab-btn" type="button" role="tab" aria-selected="false" data-service="podcast">Estúdio de podcast</button>
+                    <button class="solucoes-tab-btn" type="button" role="tab" aria-selected="false" data-service="auditorio">Auditório para eventos</button>
+                    <button class="solucoes-tab-btn" type="button" role="tab" aria-selected="false" data-service="redes">Gestão de redes sociais</button>
+                    <button class="solucoes-tab-btn" type="button" role="tab" aria-selected="false" data-service="posicionamento">Posicionamento online</button>
+                    <button class="solucoes-tab-btn" type="button" role="tab" aria-selected="false" data-service="branding">Branding</button>
+                    <button class="solucoes-tab-btn" type="button" role="tab" aria-selected="false" data-service="comunicacao">Comunicação mercadológica</button>
+                    <button class="solucoes-tab-btn" type="button" role="tab" aria-selected="false" data-service="automacao">Automação</button>
+                </aside>
+
+                <div class="solucoes-tab-panels">
+                    <article class="solucoes-tab-panel active" data-service="captacao" role="tabpanel">
+                        <p class="solucoes-panel-kicker">Serviço 01</p>
+                        <h3>Captação de conteúdo presencial com equipe audiovisual e equipamento de ponta</h3>
+                        <p>Planejamos pauta, logística e linguagem de gravação para que sua produção aconteça com fluidez. Nossa equipe entra em campo com direção, captação e apoio técnico para transformar dias de gravação em semanas de conteúdo estratégico.</p>
+                        <ul>
+                            <li>Pré-produção com roteiro e alinhamento de objetivos</li>
+                            <li>Captação com equipe e equipamentos profissionais</li>
+                            <li>Banco de material pronto para campanhas e social</li>
+                        </ul>
+                        <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-panel-cta">Quero captar com a Reinvente</a>
+                    </article>
+
+                    <article class="solucoes-tab-panel" data-service="podcast" role="tabpanel" hidden>
+                        <p class="solucoes-panel-kicker">Serviço 02</p>
+                        <h3>Estúdio de podcast para criação do seu programa original</h3>
+                        <p>Você grava em um ambiente pronto, com qualidade de áudio e vídeo profissional. Suportamos desde o conceito do programa até a estrutura de episódios para construir autoridade e recorrência de audiência.</p>
+                        <ul>
+                            <li>Setup técnico completo para áudio e vídeo</li>
+                            <li>Suporte operacional durante a gravação</li>
+                            <li>Formato pensado para distribuição multicanal</li>
+                        </ul>
+                        <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-panel-cta">Quero lançar meu podcast</a>
+                    </article>
+
+                    <article class="solucoes-tab-panel" data-service="auditorio" role="tabpanel" hidden>
+                        <p class="solucoes-panel-kicker">Serviço 03</p>
+                        <h3>Auditório para eventos corporativos, lives e treinamentos</h3>
+                        <p>Estruturamos seu evento em um espaço preparado para experiência presencial e transmissão. Ideal para empresas que precisam de credibilidade, conforto do público e execução técnica sem improviso.</p>
+                        <ul>
+                            <li>Ambiente adaptável para diferentes formatos</li>
+                            <li>Suporte de operação audiovisual</li>
+                            <li>Estrutura para eventos presenciais e híbridos</li>
+                        </ul>
+                        <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-panel-cta">Reservar auditório</a>
+                    </article>
+
+                    <article class="solucoes-tab-panel" data-service="redes" role="tabpanel" hidden>
+                        <p class="solucoes-panel-kicker">Serviço 04</p>
+                        <h3>Gestão de redes sociais</h3>
+                        <p>Conduzimos sua presença com calendário, produção e operação contínua. O foco é manter consistência de marca, melhorar percepção e transformar as redes em canal ativo de relacionamento e geração de demanda.</p>
+                        <ul>
+                            <li>Planejamento editorial com foco em objetivos reais</li>
+                            <li>Criação de conteúdo com identidade da marca</li>
+                            <li>Acompanhamento de desempenho e ajustes recorrentes</li>
+                        </ul>
+                        <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-panel-cta">Estruturar minhas redes</a>
+                    </article>
+
+                    <article class="solucoes-tab-panel" data-service="posicionamento" role="tabpanel" hidden>
+                        <p class="solucoes-panel-kicker">Serviço 05</p>
+                        <h3>Posicionamento online</h3>
+                        <p>Definimos como sua marca deve ser percebida no ambiente digital e traduzimos isso em presença prática. Da mensagem à estética, construímos coerência para aumentar autoridade e lembrança.</p>
+                        <ul>
+                            <li>Diagnóstico de percepção e concorrência</li>
+                            <li>Direcionamento de narrativa e diferenciação</li>
+                            <li>Aplicação consistente nos canais digitais</li>
+                        </ul>
+                        <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-panel-cta">Quero melhorar meu posicionamento</a>
+                    </article>
+
+                    <article class="solucoes-tab-panel" data-service="branding" role="tabpanel" hidden>
+                        <p class="solucoes-panel-kicker">Serviço 06</p>
+                        <h3>Branding</h3>
+                        <p>Branding aqui é construção de valor percebido. Trabalhamos identidade, tom e narrativa para que sua marca seja reconhecida, lembrada e escolhida, com consistência em cada ponto de contato.</p>
+                        <ul>
+                            <li>Arquitetura de marca e proposta de valor</li>
+                            <li>Direção de identidade verbal e visual</li>
+                            <li>Guia de aplicação para comunicação coerente</li>
+                        </ul>
+                        <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-panel-cta">Fortalecer minha marca</a>
+                    </article>
+
+                    <article class="solucoes-tab-panel" data-service="comunicacao" role="tabpanel" hidden>
+                        <p class="solucoes-panel-kicker">Serviço 07</p>
+                        <h3>Comunicação mercadológica</h3>
+                        <p>Planejamos campanhas com estratégia de mensagem, oferta e canal para conectar sua marca ao público certo no momento certo. Mais clareza de comunicação, maior eficiência comercial.</p>
+                        <ul>
+                            <li>Planejamento de campanhas orientado por objetivo</li>
+                            <li>Construção de argumentos de valor e conversão</li>
+                            <li>Integração entre criativo, mídia e jornada</li>
+                        </ul>
+                        <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-panel-cta">Planejar minha comunicação</a>
+                    </article>
+
+                    <article class="solucoes-tab-panel" data-service="automacao" role="tabpanel" hidden>
+                        <p class="solucoes-panel-kicker">Serviço 08</p>
+                        <h3>Automação</h3>
+                        <p>Automatizamos etapas repetitivas da operação para liberar seu time para decisões estratégicas. Organizamos fluxos de relacionamento, qualificação e follow-up para ganhar escala com controle.</p>
+                        <ul>
+                            <li>Mapeamento da jornada e pontos de automação</li>
+                            <li>Implementação de fluxos e gatilhos inteligentes</li>
+                            <li>Monitoramento contínuo para evolução de performance</li>
+                        </ul>
+                        <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-panel-cta">Automatizar minha operação</a>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
@@ -68,106 +235,43 @@
     <section class="solucoes-page-method">
         <div class="solucoes-wrap">
             <header class="solucoes-section-head">
-                <h2>Como trabalhamos</h2>
-                <p>Uma metodologia em etapas para garantir previsibilidade, eficiência e evolução constante.</p>
+                <h2>Como a operação acontece na prática</h2>
+                <p>Uma jornada enxuta para sair de intenção para execução com consistência.</p>
             </header>
+
             <div class="solucoes-method-grid">
                 <article class="solucoes-method-card">
                     <span>01</span>
-                    <h3>Imersão e diagnóstico</h3>
-                    <p>Entendimento do cenário, metas, público e pontos de oportunidade do negócio.</p>
+                    <h3>Diagnóstico estratégico</h3>
+                    <p>Entendimento profundo do momento da marca, metas e gargalos prioritários.</p>
                 </article>
                 <article class="solucoes-method-card">
                     <span>02</span>
-                    <h3>Arquitetura estratégica</h3>
-                    <p>Definição de narrativa, canais, plano tático e indicadores de acompanhamento.</p>
+                    <h3>Plano de ação integrado</h3>
+                    <p>Definição dos serviços ideais e da ordem de execução para máximo impacto.</p>
                 </article>
                 <article class="solucoes-method-card">
                     <span>03</span>
-                    <h3>Produção e ativação</h3>
-                    <p>Squad executando criativos, mídia, conteúdo e tecnologia com integração total.</p>
+                    <h3>Execução com squad</h3>
+                    <p>Ativação prática com especialistas em conteúdo, comunicação e tecnologia.</p>
                 </article>
                 <article class="solucoes-method-card">
                     <span>04</span>
                     <h3>Otimização contínua</h3>
-                    <p>Análises recorrentes para ajustes de rota e ganho progressivo de performance.</p>
+                    <p>Ajustes recorrentes baseados em dados para manter evolução constante.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <section class="solucoes-page-services" id="services">
-        <div class="solucoes-wrap">
-            <header class="solucoes-section-head">
-                <h2>Nossas especialidades</h2>
-                <p>Frentes de atuação que funcionam em conjunto para construir presença e crescimento sustentado.</p>
-            </header>
-
-            <div class="solucoes-services-grid">
-                <article class="solucoes-service-card">
-                 
-                    <h3>Performance</h3>
-                    <p>Estratégias de mídia, funis e otimização para crescimento com eficiência de investimento.</p>
-                </article>
-                <article class="solucoes-service-card">
-                   
-                    <h3>Branding</h3>
-                    <p>Posicionamento, identidade e construção de valor para marcas memoráveis.</p>
-                </article>
-                <article class="solucoes-service-card">
-                  
-                    <h3>Tech</h3>
-                    <p>Plataformas, automações e integrações que apoiam marketing e operações de venda.</p>
-                </article>
-                <article class="solucoes-service-card">
-                   
-                    <h3>Social Media</h3>
-                    <p>Conteúdo estratégico, gestão de comunidade e presença digital consistente.</p>
-                </article>
-                <article class="solucoes-service-card">
-                    
-                    <h3>Produção</h3>
-                    <p>Conteúdo audiovisual e criativo para campanhas, institucional e lançamentos.</p>
-                </article>
-                <article class="solucoes-service-card">
-                    
-                    <h3>Institucional</h3>
-                    <p>Comunicação corporativa e fortalecimento de reputação com stakeholders.</p>
-                </article>
-                <article class="solucoes-service-card">
-                    
-                    <h3>Influência</h3>
-                    <p>Conexão com creators para ampliar alcance, prova social e relevância cultural.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="solucoes-page-operacao">
-        <div class="solucoes-wrap solucoes-operacao-grid">
-            <div>
-                <h2>Modelo de operação</h2>
-                <p>
-                    Acompanhamos cada ciclo com governança estratégica, priorização por impacto e metas compartilhadas
-                    entre equipe e cliente.
-                </p>
-            </div>
-            <div class="solucoes-operacao-cards">
-                <article>
-                    <div class="solucoes-operacao-icon">01</div>
-                    <h3>Sprints estratégicos</h3>
-                    <p>Planejamento e execução em ciclos curtos para ganho de velocidade.</p>
-                </article>
-                <article>
-                    <div class="solucoes-operacao-icon">02</div>
-                    <h3>Rituais de acompanhamento</h3>
-                    <p>Alinhamentos constantes para transparência e decisões assertivas.</p>
-                </article>
-                <article>
-                    <div class="solucoes-operacao-icon">03</div>
-                    <h3>Indicadores de negócio</h3>
-                    <p>Monitoramento contínuo para orientar evolução de estratégia e investimento.</p>
-                </article>
+    <section class="solucoes-final-cta">
+        <div class="solucoes-wrap solucoes-final-cta-card">
+            <p class="solucoes-kicker">Próximo passo</p>
+            <h2>Monte sua combinação ideal de serviços com a Reinvente</h2>
+            <p>Conte seu cenário atual e desenhamos um plano sob medida para acelerar sua operação.</p>
+            <div class="solucoes-final-actions">
+                <a href="https://wa.me/5511916108176" target="_blank" class="solucoes-cta solucoes-cta-primary">Contratar a Reinvente</a>
+                <a href="contato.html" class="solucoes-cta solucoes-cta-outline">Falar com o time comercial</a>
             </div>
         </div>
     </section>
@@ -207,4 +311,5 @@
 </body>
 
 </html>
+
 
