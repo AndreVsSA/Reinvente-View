@@ -2,126 +2,126 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-Thin.ttf') format('truetype');
+    src: url('../../fonts/Poppins-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-ThinItalic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-ExtraLight.ttf') format('truetype');
+    src: url('../../fonts/Poppins-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-Light.ttf') format('truetype');
+    src: url('../../fonts/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-LightItalic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    src: url('../../fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-Italic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-Medium.ttf') format('truetype');
+    src: url('../../fonts/Poppins-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-MediumItalic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-SemiBold.ttf') format('truetype');
+    src: url('../../fonts/Poppins-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+    src: url('../../fonts/Poppins-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-BoldItalic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-ExtraBold.ttf') format('truetype');
+    src: url('../../fonts/Poppins-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-Black.ttf') format('truetype');
+    src: url('../../fonts/Poppins-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins-BlackItalic.ttf') format('truetype');
+    src: url('../../fonts/Poppins-BlackItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 }
@@ -129,9 +129,9 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
-    background: #fafafa;
-    color: #222;
-    padding-top: 70px;
+    background: #12091f;
+    color: #f7f1ff;
+    padding-top: 82px;
 }
 
 html {
@@ -800,6 +800,129 @@ section:first-of-type {
     filter: drop-shadow(0 6px 18px var(--neon-purple-glow));
 }
 
+/* Depoimentos - grid de vídeos */
+.depoimentos {
+    padding: 48px 20px;
+    background: linear-gradient(180deg, rgba(24,24,24,0.85), rgba(18,9,31,0.95));
+}
+.depoimentos h2 {
+    text-align: center;
+    margin: 0 0 18px 0;
+    color: #F8BF1C;
+}
+.depoimentos-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    padding: 12px;
+}
+.depo-thumb {
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+.depo-thumb .thumb-label {
+    position: absolute;
+    left: 12px;
+    bottom: 8px;
+    color: rgba(255,255,255,0.9);
+    font-size: 0.95rem;
+    background: linear-gradient(90deg, rgba(0,0,0,0.45), rgba(0,0,0,0.2));
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+.depo-thumb .play-wrap {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.depo-thumb .play-btn {
+    pointer-events: auto;
+    background: rgba(248,191,28,0.95);
+    color: #12091f;
+    border: none;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: 0 8px 28px rgba(80,41,124,0.12);
+    transition: transform .12s ease;
+}
+.depo-thumb .play-btn:hover { transform: scale(1.05); }
+
+/* Overlay do player */
+.video-overlay {
+    position: fixed;
+    inset: 0;
+    display: none; /* hidden by default; JS will add .open to show */
+    place-items: center;
+    z-index: 2000;
+}
+.video-overlay.open {
+    display: grid;
+}
+.video-overlay[hidden] {
+    display: none !important;
+}
+.video-overlay-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+}
+.video-overlay-content {
+    position: relative;
+    width: min(1100px, 96%);
+    max-height: 92vh;
+    z-index: 2001;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+    padding: 8px;
+    box-shadow: 0 10px 60px rgba(0,0,0,0.6);
+}
+.video-overlay-content video {
+    width: 100%;
+    height: auto;
+    max-height: 88vh;
+    display: block;
+    background: #000;
+}
+.video-overlay-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 2010;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.8rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+@media (max-width: 600px) {
+    .depo-thumb { min-height: 120px; }
+    .depo-thumb .play-btn { width: 56px; height: 56px; }
+}
+
 .cta-secundaria {
     display: flex;
     align-items: center;
@@ -1183,8 +1306,283 @@ section:first-of-type {
     align-items: center;
     margin: 40px auto 0 auto;
     max-width: 1100px;
+
+}
+
+:root {
+    --brand-purple-950: #1b082d;
+    --brand-purple-900: #28093f;
+    --brand-purple-800: #421465;
+    --brand-purple-700: #5a2183;
+    --brand-purple-600: #6f2c9c;
+    --brand-gold-500: #f8bf1c;
+    --brand-gold-400: #ffd24d;
+    --brand-text-strong: #fff8ff;
+    --brand-text-soft: rgba(255, 244, 255, 0.78);
+    --brand-line: rgba(255, 255, 255, 0.13);
+    --brand-glass: rgba(255, 255, 255, 0.08);
+    --brand-shadow: 0 18px 48px rgba(14, 3, 24, 0.34);
+}
+
+body {
+    background:
+        radial-gradient(circle at 15% 0%, rgba(248, 191, 28, 0.08), transparent 24%),
+        radial-gradient(circle at 86% 12%, rgba(122, 52, 168, 0.18), transparent 30%),
+        linear-gradient(180deg, #12091f 0%, #12081d 100%);
+    color: var(--brand-text-strong);
+}
+
+.navbar {
+    height: 82px;
+    padding: 0 28px;
+}
+
+.navbar.navbar-dark {
+    height: 82px;
+    padding: 0 28px;
+    background: rgba(73, 20, 112, 0.94);
+    border-bottom: 1px solid rgba(248, 191, 28, 0.16);
+    box-shadow: 0 14px 28px rgba(17, 4, 27, 0.28);
+    backdrop-filter: blur(16px);
+}
+
+.logo-reinvente img {
+    height: 46px !important;
+    width: auto;
+}
+
+.nav-links {
+    gap: clamp(14px, 2vw, 30px);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--brand-text-strong);
+    font-weight: 500;
+    font-size: 0.94rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+.nav-links a:hover {
+    color: var(--brand-gold-500);
+    text-shadow: none;
+}
+
+.nav-actions {
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-btn {
+    min-height: 44px;
+    padding: 0 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--brand-text-strong);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: none;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--brand-text-strong);
+    border-color: rgba(255, 255, 255, 0.38);
+    box-shadow: none;
+}
+
+.nav-actions .nav-btn:last-child {
+    background: linear-gradient(180deg, var(--brand-gold-400), var(--brand-gold-500));
+    border-color: transparent;
+    color: #5a2d00;
+    font-weight: 700;
+    padding: 0 24px;
+    box-shadow: 0 14px 28px rgba(248, 191, 28, 0.26);
+}
+
+.nav-actions .nav-btn:last-child:hover {
+    background: linear-gradient(180deg, #ffe07f, var(--brand-gold-500));
+    color: #4d2902;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 999px;
+    padding: 14px 24px;
+    min-height: 50px;
+    text-decoration: none;
+    font-size: 0.96rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+}
+
+.navbar-hamburger {
+    margin-left: auto;
+    padding: 8px 0 8px 8px;
+}
+
+.navbar-hamburger .bar {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background: #fff7ff;
+}
+
+.navbar-mobile-menu {
+    top: 82px;
+    right: 16px;
+    width: min(320px, calc(100vw - 32px));
+    max-width: none;
+    border: 1px solid rgba(248, 191, 28, 0.18);
+    border-radius: 24px;
+    background: rgba(34, 8, 54, 0.96);
+    box-shadow: var(--brand-shadow);
+    padding: 20px 0 14px;
+    overflow: hidden;
+}
+
+.navbar-mobile-menu ul {
+    gap: 10px;
+}
+
+.navbar-mobile-menu a {
+    color: var(--brand-text-strong);
+    font-size: 0.98rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 14px;
+    padding: 12px 14px;
+}
+
+.navbar-mobile-menu a:hover {
+    color: var(--brand-gold-500);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.footer {
+    background:
+        radial-gradient(circle at 16% 0%, rgba(248, 191, 28, 0.08), transparent 26%),
+        linear-gradient(180deg, #26093f 0%, #160826 100%);
+    color: var(--brand-text-strong);
+    padding: 54px 32px 24px;
+    border-top: 1px solid rgba(248, 191, 28, 0.14);
+}
+
+.footer-info {
+    width: min(1240px, 100%);
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    height: 92px;
+    margin-bottom: 12px;
+}
+
+.footer-logo p,
+.footer-contact p,
+.footer-copy {
+    color: var(--brand-text-soft);
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    color: var(--brand-gold-500);
+    letter-spacing: 0.04em;
+}
+
+.footer-links a {
+    color: var(--brand-text-strong);
+}
+
+.footer-links a:hover {
+    color: var(--brand-gold-500);
+    text-decoration: none;
+}
+
+.footer-contact {
+    max-width: 320px;
+}
+
+.footer-copy {
+    width: min(1240px, 100%);
+    margin: 28px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 1180px) {
+    .nav-actions .nav-btn:first-child {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding-top: 78px;
+    }
+
+    .navbar,
+    .navbar.navbar-dark {
+        height: 78px;
+        padding: 0 18px;
+    }
+
+    .navbar-mobile-menu {
+        top: 78px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact {
+        max-width: none;
+    }
+}
+
+@media (max-width: 879px) {
+    .nav-links {
+        display: none !important;
+    }
+
+    .navbar-hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 560px) {
+    .nav-actions {
+        display: none !important;
+    }
+
+    .logo-reinvente img {
+        height: 42px !important;
+    }
+
 }
 
 .case-logo {
@@ -1952,3 +2350,33 @@ section:first-of-type {
   }
 
 /* Variáveis (ajuste paleta aqui) */
+
+/* Global purple harmonization */
+:root {
+    --purple-bg-900: #1a0c2b;
+    --purple-bg-850: #221036;
+    --purple-bg-800: #2b1541;
+    --purple-bg-750: #341a4d;
+}
+
+body {
+    background:
+        radial-gradient(circle at 14% 0%, rgba(248, 191, 28, 0.06), transparent 24%),
+        radial-gradient(circle at 88% 10%, rgba(154, 89, 208, 0.14), transparent 32%),
+        linear-gradient(180deg, var(--purple-bg-900) 0%, var(--purple-bg-850) 100%);
+}
+
+.navbar.navbar-dark {
+    background: linear-gradient(180deg, rgba(72, 27, 110, 0.95), rgba(59, 20, 94, 0.94));
+    border-bottom: 1px solid rgba(248, 191, 28, 0.18);
+}
+
+.navbar-mobile-menu {
+    background: linear-gradient(180deg, rgba(52, 17, 82, 0.97), rgba(40, 14, 63, 0.97));
+}
+
+.footer {
+    background:
+        radial-gradient(circle at 16% 0%, rgba(248, 191, 28, 0.07), transparent 26%),
+        linear-gradient(180deg, #31134a 0%, #1f0d31 100%);
+}

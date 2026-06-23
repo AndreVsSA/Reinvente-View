@@ -65,6 +65,80 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Depoimentos: grid de miniaturas + overlay de player
+(() => {
+    const depoVideos = [
+        {src: 'source/vds/Camila Guerra - depoimento.mp4', title: 'Camila Guerra'},
+        {src: 'source/vds/Leticia Cajal - depoimento.mp4', title: 'Leticia Cajal'}
+    ];
+
+    const grid = document.getElementById('depoimentos-grid');
+    const overlay = document.getElementById('video-overlay');
+    const overlayBackdrop = document.getElementById('video-overlay-backdrop');
+    const overlayClose = document.getElementById('video-overlay-close');
+    const overlayVideo = document.getElementById('overlay-video');
+
+    if (!grid || !overlay || !overlayVideo) return;
+
+    const createThumb = (video) => {
+        const wrap = document.createElement('div');
+        wrap.className = 'depo-thumb';
+        wrap.tabIndex = 0;
+        wrap.setAttribute('role', 'button');
+        wrap.setAttribute('aria-label', `Abrir depoimento de ${video.title}`);
+
+        const label = document.createElement('div');
+        label.className = 'thumb-label';
+        label.textContent = video.title;
+
+        const playWrap = document.createElement('div');
+        playWrap.className = 'play-wrap';
+        const btn = document.createElement('button');
+        btn.className = 'play-btn';
+        btn.innerHTML = '<i class="fas fa-play"></i>';
+        btn.type = 'button';
+        playWrap.appendChild(btn);
+
+        wrap.appendChild(playWrap);
+        wrap.appendChild(label);
+
+        // Click / teclado
+        const open = () => {
+            overlay.classList.add('open');
+            overlay.removeAttribute('hidden');
+            overlay.setAttribute('aria-hidden', 'false');
+            overlayVideo.src = video.src;
+            overlayVideo.currentTime = 0;
+            overlayVideo.play().catch(()=>{});
+            // focus no botão fechar
+            setTimeout(() => overlayClose && overlayClose.focus(), 60);
+        };
+
+        wrap.addEventListener('click', open);
+        wrap.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+        });
+
+        return wrap;
+    };
+
+    depoVideos.forEach(v => grid.appendChild(createThumb(v)));
+
+    const closeOverlay = () => {
+        overlay.classList.remove('open');
+        overlay.setAttribute('aria-hidden', 'true');
+        overlay.setAttribute('hidden', '');
+        try { overlayVideo.pause(); } catch(e){}
+        try { overlayVideo.removeAttribute('src'); overlayVideo.load(); } catch(e){}
+    };
+
+    overlayBackdrop && overlayBackdrop.addEventListener('click', closeOverlay);
+    overlayClose && overlayClose.addEventListener('click', closeOverlay);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay && !overlay.hidden) closeOverlay();
+    });
+})();
 const marquee = document.querySelector('.marquee-content');
 if (marquee) {
         let normal = true;
@@ -101,35 +175,18 @@ function setupSlideCarousel(imgElement, images, intervalMs) {
     }
 
     let index = 0;
+    const fadeDurationMs = 500;
     setInterval(() => {
         imgElement.classList.add('is-sliding');
         setTimeout(() => {
             index = (index + 1) % images.length;
             imgElement.src = images[index];
             imgElement.classList.remove('is-sliding');
-        }, 360);
+        }, fadeDurationMs);
     }, intervalMs);
 }
 
-// Carousel for podcasts
-const podcastImages = [
-    "source/imgs/podcast 1.jpg",
-    "source/imgs/podcast 2.jpg",
-    "source/imgs/podcast 3.jpg",
-    "source/imgs/podcast 4.jpg"
-];
-const podcastImg = document.querySelector("#podcast-carousel img");
-setupSlideCarousel(podcastImg, podcastImages, 4500);
-
-// Carousel for auditorio
-const auditorioImages = [
-    "source/imgs/estudio 1.jpg",
-    "source/imgs/estudio 2.jpg",
-    "source/imgs/estudio 3.jpg",
-    "source/imgs/estudio 4.jpg"
-];
-const auditorioImg = document.querySelector("#auditorio-carousel img");
-setupSlideCarousel(auditorioImg, auditorioImages, 4500);
+// Podcast e auditório agora usam grade estática de imagens no HTML para evitar trocas com timer.
 
 // Carousel de prints de depoimentos
 const depoimentoPrints = [

@@ -103,14 +103,14 @@
 }
 
 .contact-pro-btn--primary {
-    background: linear-gradient(120deg, var(--contact-primary), var(--contact-primary-strong));
-    color: #fff;
+    background: linear-gradient(180deg, #ffd24d, #f8bf1c);
+    color: #5a2d00;
     padding: 12px 24px;
-    box-shadow: 0 10px 28px rgba(138, 78, 212, 0.35);
+    box-shadow: 0 10px 28px rgba(248, 191, 28, 0.26);
 }
 
 .contact-pro-btn--primary:hover {
-    box-shadow: 0 14px 30px rgba(138, 78, 212, 0.45);
+    box-shadow: 0 14px 30px rgba(248, 191, 28, 0.34);
 }
 
 .contact-pro-btn--ghost {
@@ -487,4 +487,18 @@
     .contact-pro-aside-card {
         padding: 20px;
     }
+}
+
+/* Contato purple harmonization */
+body {
+    background:
+        radial-gradient(circle at 10% 0%, rgba(248, 191, 28, 0.05), transparent 24%),
+        radial-gradient(circle at 92% 10%, rgba(154, 89, 208, 0.14), transparent 34%),
+        linear-gradient(180deg, #1d0d30 0%, #180b28 100%);
+}
+
+.contact-pro-channels,
+.contact-pro-main,
+.contact-pro-faq {
+    background: linear-gradient(180deg, #25123c 0%, #1c0e30 100%);
 }

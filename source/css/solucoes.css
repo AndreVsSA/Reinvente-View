@@ -195,8 +195,8 @@ body.solucoes-page {
 }
 
 .solucoes-page .cta-btn {
-    background: linear-gradient(120deg, var(--sol-primary), var(--sol-primary-strong));
-    color: #fff;
+    background: linear-gradient(180deg, #ffd24d, #f8bf1c);
+    color: #5a2d00;
     max-width: none;
     min-width: 230px;
     padding: 14px 26px;
@@ -209,17 +209,18 @@ body.solucoes-page {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 16px 30px rgba(138, 78, 212, 0.28);
+    box-shadow: 0 16px 30px rgba(248, 191, 28, 0.24);
 }
 
 .solucoes-page .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 20px 34px rgba(138, 78, 212, 0.38);
+    box-shadow: 0 20px 34px rgba(248, 191, 28, 0.32);
 }
 
 .solucoes-page .cta-btn-secondary {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
     box-shadow: none;
 }
 
@@ -628,4 +629,19 @@ body.solucoes-page {
     .solucoes-final-cta-card {
         padding: 22px;
     }
+}
+
+/* Solucoes purple harmonization */
+body.solucoes-page {
+    background:
+        radial-gradient(circle at 10% 0%, rgba(248, 191, 28, 0.05), transparent 24%),
+        radial-gradient(circle at 92% 10%, rgba(154, 89, 208, 0.14), transparent 34%),
+        linear-gradient(180deg, #1d0d30 0%, #180b28 100%);
+}
+
+.solucoes-catalogo,
+.solucoes-explorer,
+.solucoes-page-method,
+.solucoes-final-cta {
+    background: linear-gradient(180deg, #25123c 0%, #1c0e30 100%);
 }
