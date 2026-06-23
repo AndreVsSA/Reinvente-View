@@ -109,7 +109,9 @@
     gap: 12px;
     margin-top: 28px;
 }
-
+.email{
+    font-size: 0.8rem;
+}
 .home-page .cta-btn {
     background: linear-gradient(120deg, var(--home-primary), var(--home-primary-strong));
     color: #fff;
@@ -1333,6 +1335,7 @@ body.home-page {
 }
 
 @media (max-width: 600px) {
+    
     .home-page .contato-social-icons-inline .contato-social-icon {
         width: 46px;
         height: 46px;
@@ -1417,7 +1420,7 @@ body.home-page {
     z-index: 1;
     width: min(1320px, 100%);
     margin: 0 auto;
-    padding: clamp(56px, 8vw, 110px) clamp(22px, 4vw, 48px) clamp(48px, 6vw, 84px);
+   
     display: grid;
     grid-template-columns: minmax(0, 1.05fr) minmax(250px, 0.95fr);
     align-items: center;
@@ -1501,7 +1504,27 @@ body.home-page {
     width: min(100%, 460px);
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 22px 40px rgba(248, 191, 28, 0.16));
+    filter: blur(10px) drop-shadow(0 22px 40px rgba(248, 191, 28, 0.16));
+    opacity: 0;
+    animation: heroBrandArtCycle 14.5s linear infinite;
+    will-change: opacity, filter;
+}
+
+@keyframes heroBrandArtCycle {
+    0%, 13.793% {
+        opacity: 0;
+        filter: blur(10px) drop-shadow(0 22px 40px rgba(248, 191, 28, 0.16));
+    }
+
+    34.483%, 82.759% {
+        opacity: 1;
+        filter: blur(0) drop-shadow(0 22px 40px rgba(248, 191, 28, 0.16));
+    }
+
+    93.103%, 100% {
+        opacity: 0;
+        filter: blur(10px) drop-shadow(0 22px 40px rgba(248, 191, 28, 0.16));
+    }
 }
 
 .home-page .home-fold {
@@ -1572,10 +1595,7 @@ body.home-page {
 }
 
 @media (max-width: 600px) {
-    .home-page .hero-content-shell {
-        padding-left: 18px;
-        padding-right: 18px;
-    }
+    
 
     .home-page .hero-text.hero-text-centered h1 {
         font-size: clamp(2.6rem, 16vw, 4rem);
@@ -1588,6 +1608,51 @@ body.home-page {
 
     .home-page .hero-brand-art img {
         width: min(250px, 62vw);
+    }
+}
+
+@media (max-width: 500px) {
+    .home-page .hero-content-shell {
+      
+        justify-items: center;
+    }
+
+    .home-page .hero-text.hero-text-centered {
+        width: 100%;
+        min-width: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-page .hero-text.hero-text-centered .hero-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .home-page .hero-text.hero-text-centered h1 {
+        font-size: clamp(2rem, 12vw, 3rem);
+        max-width: 100%;
+    }
+
+    .home-page .hero-cta-diagnostic {
+        width: 100%;
+        max-width: 280px;
+        min-width: 0;
+        white-space: normal;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .home-page .hero-brand-art {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .home-page .hero-brand-art img {
+        width: min(160px, 42vw);
+        max-width: 160px;
     }
 }
 
