@@ -829,13 +829,7 @@
     border-top: 0;
 }
 
-.home-page .navbar.navbar-dark {
-    height: 82px;
-    padding: 0 34px;
-    background: rgba(8, 10, 15, 0.92);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
+
 
 body.home-page {
     padding-top: 82px;
@@ -1237,7 +1231,7 @@ body.home-page {
 
 .home-page .contato-form-card {
     max-width: 620px;
-    width: 100%;
+    
 }
 
 .home-page .contato-social-icons-inline {
